@@ -15,7 +15,7 @@ const app = new Frog({
 
 app.frame('/', (c) => {
   return c.res({
-    image: '/init.jpg',
+    image: 'https://github.com/0xKaepora/followback-frog/blob/main/public/init.jpg',
     intents: [
       <Button
         action="/progress"
@@ -30,7 +30,7 @@ app.frame('/', (c) => {
 app.frame('/progress', (c) => {
   const { buttonValue } = c
   return c.res({
-    image: '/in-progress.jpg',
+    image: 'https://github.com/0xKaepora/followback-frog/blob/main/public/in-progress.jpg',
     /* image: (
       <div style={{ color: 'white', display: 'flex', fontSize: 60 }}>
         Selected: {buttonValue}
@@ -50,7 +50,7 @@ app.frame('/progress', (c) => {
 app.frame('/results', (c) => {
   const { buttonValue } = c
   return c.res({
-    image: 'winner.jpg',
+    image: 'https://github.com/0xKaepora/followback-frog/blob/main/public/winner.jpg',
     /* image: (
       <div style={{ color: 'white', display: 'flex', fontSize: 60 }}>
         Selected: {buttonValue}
